@@ -31,7 +31,7 @@ public class MemberController {
         Member member = new Member();
         member.setName(form.getName());
 
-        memberService.join(member);
+        memberService.join(member); // memberservice 에서 join 함수를 가져옴
 
         return "redirect:/";
     }
